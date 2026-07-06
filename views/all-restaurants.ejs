@@ -11,11 +11,9 @@
         <h1>All Restaurants</h1>
         <% for(oneRestaurant of restaurants){%>
             <% if(oneRestaurant.isOpen===true){%>
-                <a href="/restaurants/<%=oneRestaurant.id%>" class="aLink"><%= oneRestaurant.name %></a>
-
+                <a href="/restaurants/<%=oneRestaurant.id%>" class="allRestaurants"><%= oneRestaurant.name %></a>
                 <% } else { %>
-                    <a href="/restaurants/<%=oneRestaurant.id%>" class="aLink"><%= oneRestaurant.name %> - Closed</a>
-
+                    <a href="/restaurants/<%=oneRestaurant.id%>" class="allRestaurants"><%= oneRestaurant.name %> <span id="closed">- Closed</span></a>
                     <%}%>
                         <% } %>
 </body>

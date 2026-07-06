@@ -60,7 +60,6 @@ body {
 
 
 .cards{
-
     background-color: #82483D;
     display: inline-block;
     width: 200px;
@@ -69,6 +68,24 @@ body {
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
-
 }
 
+.allRestaurants{
+    text-decoration: none;
+    font-weight: bold;
+    color:#4E3729;
+    background-color: #D2C0AC;
+    display: inline-block;
+    padding: 20px;
+    margin: 6px;
+    border-radius: 8px;
+}
+
+.allRestaurants:hover{
+    box-shadow: 0 0 15px #D4D3CF;
+}
+
+#closed{
+    color:#82483D;
+    font-weight: lighter;
+}
