@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/style.css">
 
 </head>
 <body>
     <%- include('nav.ejs') %>
-    <h1>Resturaunt details</h1>
-    <p>Name: <%= foundrestaurant.name %></p>
-    <p>Address: <%= foundrestaurant.address %></p>
-    <p>Open: <%= foundrestaurant.isOpen %></p>
-    <p>Phone: <%= foundrestaurant.phone %></p>
+    <h1>Restauraunt details</h1>
+    <div id="resturauntDetails">
+    <p><span class="details" id="resturauntName">Resturaunt Name</span> <%= foundrestaurant.name %></p>
+    <p><span class="details">Resturaunt Address</span> <%= foundrestaurant.address %></p>
+    <p><span class="details" id="resturauntOpen">Resturaunt is Open</span> <%= foundrestaurant.isOpen %></p>
+    <p><span class="details" id="resturauntPhone">Resturaunt Phone</span> <%= foundrestaurant.phone %></p>
+    </div>
 
+    <div id="menu">
     <% for(oneMenuItem of foundrestaurant.menu){%>
+        <div class="cards">
           <p><%= oneMenuItem.name%></p>
-          <p><%= oneMenuItem.price%></p>
-          <p><%= oneMenuItem.rating%></p>
-       <% } %>
+          <p>Price: <%= oneMenuItem.price%></p>
+          <p>Rating: <%= oneMenuItem.rating%></p>
+        </div>
+          <% } %>
+    </div>
     </body>
 </html>
