@@ -1,3 +1,36 @@
 body {
-    background-color: pink;
+    background-color: #592C33;
+    color: #D4D3CF;
+    margin: 0;
+    text-align: center;
+}
+
+.aLink{
+    color: #D2C0AC;
+    text-decoration: none;
+    
+}
+
+#allRestaurants{
+    background-color:#82483D ;
+    border-radius: 7px;
+    padding: 8px 7px;
+}
+
+#allRestaurants:hover{
+    background-color: #82493d76;
+    box-shadow: 0 0 15px #D4D3CF;
+}
+
+#navbar{
+    background-color: #82483D;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+#navbar a:hover{
+    border-bottom: solid #D2C0AC;
 }
